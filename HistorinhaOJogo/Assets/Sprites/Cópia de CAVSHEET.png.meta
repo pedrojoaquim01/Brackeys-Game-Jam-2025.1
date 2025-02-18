@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 0db3edcbda5d3184a81b2db94d36506a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_0"
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1838
+        width: 79
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be3a410e24c9cc4f9e16df65ddbab6a
+      internalID: 733015369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_1"
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1838
+        width: 80
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0593bb7a45f0e4290d9308c3238b84
+      internalID: 780635674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_2"
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1837
+        width: 79
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4432be3015be2d140a1b2cbc69c19127
+      internalID: 694525147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_3"
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1840
+        width: 76
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2391254539313ee4d9529f02b2c529b1
+      internalID: -358516141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_4"
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1841
+        width: 75
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ab1c303f701c646a4396ebba6122b0
+      internalID: 1038724601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_5"
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 1838
+        width: 81
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a597f517758f814da776f314d2d437c
+      internalID: 2097698367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_6"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1625
+        width: 78
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000c6918647b97a4392fe41ec082d114
+      internalID: 63620597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_7"
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1626
+        width: 78
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09809a20da7e0f14381c8965c54955f4
+      internalID: 846639950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_8"
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1620
+        width: 106
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e0820391a461f4191d67746b2d1ab4
+      internalID: 1066383030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_9"
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1620
+        width: 106
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac2cb7efbc0a744a9ec2f2211d3fceb
+      internalID: -1909567287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_10"
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 1621
+        width: 107
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09eed0f437770d4a92187bc38105f45
+      internalID: 619128023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_11"
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1613
+        width: 130
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a70c1b5c3e7704790c07c94099f89b
+      internalID: 1450216173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_12"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1440
+        width: 179
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca7aef51f9ec44b91ad8c5560b521e
+      internalID: -2053088053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_13"
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1444
+        width: 180
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf08216fe1acbda47b92826b053f57e6
+      internalID: -1699682391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_14"
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1444
+        width: 139
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70010e2b3ae245c4ab1fe9925f9f57b2
+      internalID: 863856591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_15"
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1442
+        width: 136
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fce9bfa2eeb79a45826e678dde06a1f
+      internalID: 856349172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_16"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1432
+        width: 128
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086c2a6ab44520c469c4b3057843cfa5
+      internalID: -580436862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_17"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1229
+        width: 75
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b10f813dc1c7942b5c4217b5129de3
+      internalID: 1564387422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_18"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1229
+        width: 76
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc142ba955a406f44b50a1d0260f5d13
+      internalID: -1088326470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_19"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1222
+        width: 105
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8b1539387959747abc81b5cec8bcbb
+      internalID: -543468112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_20"
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1220
+        width: 127
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9a5e3bb3e0c1f4dbddc4fd94a43dba
+      internalID: -1309656133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_21"
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1221
+        width: 136
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4d2c419c5ce9542b8a8d066a2e8acd
+      internalID: 2052341031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_22"
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1219
+        width: 135
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d26536d78aba24fa0a7edeb3f1aaea
+      internalID: -1713019683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_24"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1059
+        width: 103
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b202ab17976cd24498ead3edbe39c2bd
+      internalID: -1475244032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_25"
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 847
+        width: 78
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b5df387ba4f1e4f97b3fd3865b5ba6
+      internalID: -387573849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_26"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 680
+        width: 76
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ef14c4c3b50bb44b847ebba0bf3b20
+      internalID: -1461759345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_27"
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 847
+        width: 75
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c9763cb7971914c9de7c28c3993532
+      internalID: -692560281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_28"
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 845
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906c8790ec4a0da41a2cf210137640ba
+      internalID: -1778691209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_29"
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 846
+        width: 77
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a6e8c50537ad34785eba381555b79b
+      internalID: -1051686438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_30"
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 846
+        width: 76
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eaa1a15b4d621d46a3a671b437b7778
+      internalID: -662716991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_31"
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 844
+        width: 77
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ea5293999f6164ea0f237c90fa6465
+      internalID: 1793748463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_32"
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 458
+        width: 77
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc071ba596116345b1bd7bdbca4d8d9
+      internalID: -1153310497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_33"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 460
+        width: 75
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2547b6412b9744d93bc9d8c6ea602c
+      internalID: -1184601689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_34"
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 460
+        width: 78
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fc75d09969c5c46bcf3338be8fbaa5
+      internalID: -1448179708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_35"
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 458
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993cae5599da5364a9ea1cedb1f9169e
+      internalID: 1048985893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_36"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 456
+        width: 75
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4570f0dd0377a408b91cb4a6716128
+      internalID: 60584756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "C\xF3pia de CAVSHEET_37"
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 449
+        width: 77
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a5b08cbe176fa489bbbeeb129ab109
+      internalID: -1174828536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "C\xF3pia de CAVSHEET_8": 1066383030
+      "C\xF3pia de CAVSHEET_0": 733015369
+      "C\xF3pia de CAVSHEET_1": 780635674
+      "C\xF3pia de CAVSHEET_3": -358516141
+      "C\xF3pia de CAVSHEET_22": -1713019683
+      "C\xF3pia de CAVSHEET_13": -1699682391
+      "C\xF3pia de CAVSHEET_16": -580436862
+      "C\xF3pia de CAVSHEET_27": -692560281
+      "C\xF3pia de CAVSHEET_30": -662716991
+      "C\xF3pia de CAVSHEET_36": 60584756
+      "C\xF3pia de CAVSHEET_7": 846639950
+      "C\xF3pia de CAVSHEET_20": -1309656133
+      "C\xF3pia de CAVSHEET_29": -1051686438
+      "C\xF3pia de CAVSHEET_26": -1461759345
+      "C\xF3pia de CAVSHEET_2": 694525147
+      "C\xF3pia de CAVSHEET_9": -1909567287
+      "C\xF3pia de CAVSHEET_11": 1450216173
+      "C\xF3pia de CAVSHEET_33": -1184601689
+      "C\xF3pia de CAVSHEET_24": -1475244032
+      "C\xF3pia de CAVSHEET_28": -1778691209
+      "C\xF3pia de CAVSHEET_6": 63620597
+      "C\xF3pia de CAVSHEET_23": 732424399
+      "C\xF3pia de CAVSHEET_14": 863856591
+      "C\xF3pia de CAVSHEET_35": 1048985893
+      "C\xF3pia de CAVSHEET_15": 856349172
+      "C\xF3pia de CAVSHEET_32": -1153310497
+      "C\xF3pia de CAVSHEET_19": -543468112
+      "C\xF3pia de CAVSHEET_4": 1038724601
+      "C\xF3pia de CAVSHEET_17": 1564387422
+      "C\xF3pia de CAVSHEET_25": -387573849
+      "C\xF3pia de CAVSHEET_31": 1793748463
+      "C\xF3pia de CAVSHEET_37": -1174828536
+      "C\xF3pia de CAVSHEET_10": 619128023
+      "C\xF3pia de CAVSHEET_18": -1088326470
+      "C\xF3pia de CAVSHEET_12": -2053088053
+      "C\xF3pia de CAVSHEET_34": -1448179708
+      "C\xF3pia de CAVSHEET_21": 2052341031
+      "C\xF3pia de CAVSHEET_5": 2097698367
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
