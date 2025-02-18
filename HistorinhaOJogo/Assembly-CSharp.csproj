@@ -62,8 +62,8 @@
     <Analyzer Include="C:\Users\pedro\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Movimento.cs" />
     <Compile Include="Assets\Script\Vida.cs" />
+    <Compile Include="Assets\Script\Movimento.cs" />
     <Compile Include="Assets\Script\Verifica_Chao.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -164,7 +164,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 286435971}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccf11c0835b9e01479dc62e51ec395b0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -382,7 +382,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1563742115}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccf11c0835b9e01479dc62e51ec395b0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -458,6 +458,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1919710944525266103, guid: 744e4a0e807d2e94492644a0c842fedb, type: 3}
+      propertyPath: m_Size.x
+      value: 1.03463
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919710944525266103, guid: 744e4a0e807d2e94492644a0c842fedb, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0346509
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919710944525266103, guid: 744e4a0e807d2e94492644a0c842fedb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0031771064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1919710944525266103, guid: 744e4a0e807d2e94492644a0c842fedb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.74
+      objectReference: {fileID: 0}
     - target: {fileID: 1919710944942816194, guid: 744e4a0e807d2e94492644a0c842fedb, type: 3}
       propertyPath: m_Name
       value: Cava
@@ -585,7 +601,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1757785927}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ccf11c0835b9e01479dc62e51ec395b0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
