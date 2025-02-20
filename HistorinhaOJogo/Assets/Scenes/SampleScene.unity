@@ -1203,6 +1203,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8327210688826666944, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666946, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -1241,6 +1245,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
