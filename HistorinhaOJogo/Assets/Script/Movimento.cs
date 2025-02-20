@@ -8,31 +8,35 @@ public class Movimento : MonoBehaviour
     [SerializeField] private float jumpPower = 5.0f;
     [SerializeField] private GameObject espada;
     [SerializeField] private GameObject escudo;
-    Animator animator;
+
+    [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private Animator animator;
 
     private Rigidbody2D _playerRigidbody;
     public bool IsGrounded = true;
     public bool def = false;
     private void Start()
     {   
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         _playerRigidbody = GetComponent<Rigidbody2D>();
         if (_playerRigidbody == null)
         {
             Debug.LogError("Player is missing a Rigidbody2D component");
         }
+        animator.SetBool("mov",false);
     }
     private void Update()
     {
         MovePlayer();
-
         if (Input.GetButtonDown("Jump") && IsGrounded)
         { 
             Jump();
             IsGrounded = false;
         }
-
-        _playerRigidbody.velocity = Vector2.ClampMagnitude(_playerRigidbody.velocity, 20);
+    }
+    private void FixedUpdate()
+    {
+        _playerRigidbody.velocity = Vector2.ClampMagnitude(_playerRigidbody.velocity, 30);
     }
     private void MovePlayer()
     {
@@ -46,12 +50,12 @@ public class Movimento : MonoBehaviour
 
         if (horizontalInput == -1)
         {
-            this.GetComponent<SpriteRenderer>().flipX = true;
+            sprite.flipX = true;
             
         }
         else if (horizontalInput == 1)
         {
-            this.GetComponent<SpriteRenderer>().flipX = false;
+            sprite.flipX = false;
         }
 
         _playerRigidbody.velocity = new Vector2(horizontalInput * playerSpeed, _playerRigidbody.velocity.y);
@@ -65,10 +69,20 @@ public class Movimento : MonoBehaviour
     private void Jump() => _playerRigidbody.AddForce( new Vector2( 0, jumpPower),  ForceMode2D.Impulse);
 
     void OnCollisionEnter2D(Collision2D col)
-    {
+    {   
+        
         if (col.gameObject.tag == "Chao")
         {
             IsGrounded = true;
+        }
+        Collider2D myCollider = col.GetContact(0).collider;
+         if (myCollider.gameObject.tag == "Alvo")   
+        {
+            if (_playerRigidbody.velocity.y < 25)
+            {
+                _playerRigidbody.AddForce( new Vector2( 0, jumpPower),  ForceMode2D.Impulse);
+            }
+           col.gameObject.GetComponent<Mov_inimigo>().vida -= 100;
         }
     }
 }
