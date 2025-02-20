@@ -745,6 +745,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8327210688826666944, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666946, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -783,6 +787,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
@@ -832,6 +848,22 @@ PrefabInstance:
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666951, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8327210688826666951, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210688826666951, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210689868101912, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -212.49998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
