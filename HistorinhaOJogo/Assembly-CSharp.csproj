@@ -62,12 +62,15 @@
     <Analyzer Include="C:\Users\willi\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\DialogueSystem\DialogueManager.cs" />
     <Compile Include="Assets\Script\Vida.cs" />
     <Compile Include="Assets\Script\Movimento.cs" />
-    <Compile Include="Assets\Script\Verifica_Chao.cs" />
-    <Compile Include="Assets\Script\DialogueSystem\DialogueManager.cs" />
-    <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
     <Compile Include="Assets\Script\DialogueSystem\Dialogue.cs" />
+    <Compile Include="Assets\Script\Verifica_Chao.cs" />
+    <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
+    <Compile Include="Assets\Script\Enemy\Components\EnemyLife.cs" />
+    <Compile Include="Assets\Script\UI\MainMenu.cs" />
+    <Compile Include="Assets\Script\UI\Options.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

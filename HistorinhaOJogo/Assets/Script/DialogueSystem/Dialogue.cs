@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Assets.Script.DialogueSystem
 {
-    [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue", order = 0)]
+    [CreateAssetMenu(fileName = "Dialogue", menuName = "Dialogue System/Dialogue", order = 0)]
     public class Dialogue : ScriptableObject {
         [field:SerializeField] public string Name { get; private set; } = string.Empty;
         [field:SerializeField][field:Multiline] public string Text { get; private set; } = string.Empty;
