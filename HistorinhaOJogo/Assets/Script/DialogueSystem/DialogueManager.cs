@@ -60,6 +60,13 @@ namespace Assets.Script.DialogueSystem
             StartCoroutine(ShowDialogue(dialogues[index]));
         }
 
+        public void RequestEnd()
+        {
+            if (!IsPlaying) 
+                return;
+            End();
+        }
+
         private IEnumerator ShowDialogue(Dialogue d)
         {
             txtName.text = d.Name;

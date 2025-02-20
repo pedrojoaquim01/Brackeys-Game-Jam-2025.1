@@ -3,5 +3,6 @@ using UnityEngine;
 
 public abstract class Event : ScriptableObject
 {
+    
     public abstract void TriggerEvent();
 }

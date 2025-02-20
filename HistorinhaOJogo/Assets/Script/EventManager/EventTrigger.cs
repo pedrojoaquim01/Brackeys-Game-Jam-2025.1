@@ -31,9 +31,13 @@ public class EventTrigger : MonoBehaviour
 
     public virtual void StartEvent()
     {
+        if (DialogueManager.Instance.IsPlaying)
+            DialogueManager.Instance.RequestEnd();
+        
         DialogueManager.OnDialogueStart += DialogueStarted;
         DialogueManager.OnDialogueEnd += DialogueEnded;
         DialogueManager.OnDialogueChanged += DialogueChanged;
+        
         collider2d.enabled = false;
         DialogueManager.Instance.Play(Dialogs);
     }

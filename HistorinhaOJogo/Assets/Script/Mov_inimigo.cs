@@ -9,6 +9,7 @@ public class Mov_inimigo : MonoBehaviour
     private SpriteRenderer _inimSprite;
     public bool agir;
     public float velocidade;
+    public float velocidadeMod = 1f;
 
     public float vida = 100;
     public Constants.EnemyGroup EnemyGroup = Constants.EnemyGroup.DEFAULT;
@@ -25,7 +26,7 @@ public class Mov_inimigo : MonoBehaviour
     {
         if (agir)
         {
-            _InimRigidbody.velocity = new Vector2( lado * velocidade, _InimRigidbody.velocity.y);
+            _InimRigidbody.velocity = new Vector2( lado * (velocidade * velocidadeMod), _InimRigidbody.velocity.y);
         }
 
         if(vida <= 0)
