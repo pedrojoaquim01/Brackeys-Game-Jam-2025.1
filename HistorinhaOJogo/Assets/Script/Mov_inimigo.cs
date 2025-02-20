@@ -11,6 +11,7 @@ public class Mov_inimigo : MonoBehaviour
     public float velocidade;
 
     public float vida = 100;
+    public Constants.EnemyGroup EnemyGroup = Constants.EnemyGroup.DEFAULT;
 
     // Start is called before the first frame update
     void Start()

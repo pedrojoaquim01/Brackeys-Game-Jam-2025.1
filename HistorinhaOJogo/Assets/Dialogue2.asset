@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18218def38f774f91aa226ea86621c, type: 3}
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: texto sexy
-  <Text>k__BackingField: uiuiui qye sexy :3
+  <Name>k__BackingField: "Voz do al\xE9m"
+  <Text>k__BackingField: ... e ginormicas!!!
   <SpeechSpeed>k__BackingField: 0.05
-  <AutoAvanceTime>k__BackingField: -1
+  <AutoAvanceTime>k__BackingField: 1

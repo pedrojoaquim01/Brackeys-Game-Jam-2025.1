@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f18218def38f774f91aa226ea86621c, type: 3}
-  m_Name: Dialog
+  m_Script: {fileID: 11500000, guid: 53fa478cdf575ad4db7a9fc2476144be, type: 3}
+  m_Name: BiggerEnemiesEvent
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: "Voz do al\xE9m"
-  <Text>k__BackingField: Oh meu Deus! As lesmas ficaram loucas!
-  <SpeechSpeed>k__BackingField: 0.05
-  <AutoAvanceTime>k__BackingField: 0.5
+  <ScaleSize>k__BackingField: 3
+  <PulsingModfier>k__BackingField: 0.1
+  <TransitionTime>k__BackingField: 0.001
+  <Duration>k__BackingField: 5
+  <EnemyGroup>k__BackingField: 0

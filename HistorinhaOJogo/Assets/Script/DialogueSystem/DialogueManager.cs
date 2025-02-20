@@ -16,12 +16,18 @@ namespace Assets.Script.DialogueSystem
 
         public bool IsPlaying => currentDialogue is not null;
 
+        public static DialogueManager Instance;
+
         public delegate void DialogueStart();
         public static event DialogueStart OnDialogueStart;
         public delegate void DialogueEnd();
         public static event DialogueEnd OnDialogueEnd;
         public delegate void DialogueChanged(int index, Dialogue dialogue);
         public static event DialogueChanged OnDialogueChanged;
+
+        private void Awake() {
+            Instance = this;
+        }
 
         private void Start() {
             gameObject.SetActive(false);
