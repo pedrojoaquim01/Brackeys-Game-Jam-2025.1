@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\UI\Options.cs" />
     <Compile Include="Assets\Script\EventManager\Events\Enemy\EnemyBaseEvent.cs" />
     <Compile Include="Assets\Script\Vida.cs" />
+    <Compile Include="Assets\Script\Tutorial.cs" />
     <Compile Include="Assets\Script\Movimento.cs" />
     <Compile Include="Assets\Script\DialogueSystem\Dialogue.cs" />
     <Compile Include="Assets\Script\Mov_inimigo.cs" />

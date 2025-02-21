@@ -8,6 +8,9 @@ namespace Assets.Script.DialogueSystem
         [field:SerializeField][field:Multiline] public string Text { get; private set; } = string.Empty;
         [field:SerializeField] public float SpeechSpeed { get; private set; } = .02f;
         [field:SerializeField] public float AutoAvanceTime { get; private set; } = -1f;
+        [field:SerializeField] public DialoguePanelSide PanelSide { get; private set; } = DialoguePanelSide.LEFT;
         public bool IsAutoAdvance => AutoAvanceTime > 0f;
+
+        public enum DialoguePanelSide { RIGHT, LEFT }
     }
 }

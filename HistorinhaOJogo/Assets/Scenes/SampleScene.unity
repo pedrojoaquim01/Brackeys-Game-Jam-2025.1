@@ -1484,6 +1484,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_text
+      value: Wait a minute!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210690776413320, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8327210690776413321, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.9677119

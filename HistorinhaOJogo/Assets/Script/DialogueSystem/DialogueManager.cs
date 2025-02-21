@@ -8,15 +8,27 @@ namespace Assets.Script.DialogueSystem
 {
     public class DialogueManager : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI txtName;
-        [SerializeField] private TextMeshProUGUI txtText;
+        [SerializeField] private MonoBehaviour txtPanelRight;
+        [SerializeField] private TextMeshProUGUI txtNameRight;
+        [SerializeField] private TextMeshProUGUI txtTextRight;
+        [SerializeField] private MonoBehaviour txtPanelLeft;
+        [SerializeField] private TextMeshProUGUI txtNameLeft;
+        [SerializeField] private TextMeshProUGUI txtTextLeft;
         private IReadOnlyList<Dialogue> currentDialogue;
         private int index;
-        private bool textEnded => txtText.text == currentDialogue[index].Text;
-
+        private PanelGroup currentPanel => panels[currentDialogue[index].PanelSide];
+        private bool textEnded => currentPanel.txtText.text == currentDialogue[index].Text;
         public bool IsPlaying => currentDialogue is not null;
+        private Dictionary<Dialogue.DialoguePanelSide, PanelGroup> panels;
 
-        public static DialogueManager Instance;
+        public static DialogueManager Instance
+        {
+            get {
+                instance = instance != null ? instance : FindAnyObjectByType<DialogueManager>(FindObjectsInactive.Include);
+                return instance;
+            }
+        }
+        private static DialogueManager instance;
 
         public delegate void DialogueStart();
         public static event DialogueStart OnDialogueStart;
@@ -25,12 +37,12 @@ namespace Assets.Script.DialogueSystem
         public delegate void DialogueChanged(int index, Dialogue dialogue);
         public static event DialogueChanged OnDialogueChanged;
 
-        private void Awake() {
-            Instance = this;
-        }
-
         private void Start() {
             gameObject.SetActive(false);
+            panels = new(){
+            {Dialogue.DialoguePanelSide.LEFT, new(txtNameLeft, txtTextLeft, txtPanelLeft)},
+            {Dialogue.DialoguePanelSide.RIGHT, new(txtNameRight, txtTextRight, txtPanelRight)}
+        };
         }
 
         private void Update() {
@@ -45,7 +57,7 @@ namespace Assets.Script.DialogueSystem
                 else
                 {
                     StopAllCoroutines();
-                    txtText.text = currentDialogue[index].Text;
+                    currentPanel.txtText.text = currentDialogue[index].Text;
                 }
         }
 
@@ -69,12 +81,13 @@ namespace Assets.Script.DialogueSystem
 
         private IEnumerator ShowDialogue(Dialogue d)
         {
-            txtName.text = d.Name;
-            txtText.text = string.Empty;
+            var panelData = currentPanel.Show();
+            panelData.txtName.text = d.Name;
+            panelData.txtText.text = string.Empty;
             OnDialogueChanged?.Invoke(index, d);
             foreach (var c in d.Text.ToCharArray())
             {
-                txtText.text += c;
+                panelData.txtText.text += c;
                 if (textEnded && d.IsAutoAdvance)
                     Invoke(nameof(ShowNext), d.AutoAvanceTime);
                 yield return new WaitForSeconds(d.SpeechSpeed);
@@ -88,8 +101,8 @@ namespace Assets.Script.DialogueSystem
                 End();
                 return;
             }
-            index++;
-            StartCoroutine(ShowDialogue(currentDialogue[index]));
+            currentPanel.Hide();
+            StartCoroutine(ShowDialogue(currentDialogue[++index]));
         }
 
         private void End()
@@ -97,6 +110,33 @@ namespace Assets.Script.DialogueSystem
             gameObject.SetActive(false);
             currentDialogue = null;
             OnDialogueEnd?.Invoke();
+        }
+
+        private class PanelGroup
+        {
+            public PanelGroup(TextMeshProUGUI txtName, TextMeshProUGUI txtText, MonoBehaviour panel)
+            {
+                this.txtName = txtName;
+                this.txtText = txtText;
+                this.panel = panel;
+                Hide();
+            }
+
+            public TextMeshProUGUI txtName { get; internal set; }
+            public TextMeshProUGUI txtText { get; internal set; }
+            public MonoBehaviour panel { get; internal set; }
+
+            internal PanelGroup Hide()
+            {
+                panel.gameObject.SetActive(false);
+                return this;
+            }
+
+            internal PanelGroup Show()
+            {
+                panel.gameObject.SetActive(true);
+                return this;
+            }
         }
     }
 }
