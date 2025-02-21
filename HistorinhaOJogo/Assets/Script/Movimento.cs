@@ -33,10 +33,19 @@ public class Movimento : MonoBehaviour
             Jump();
             IsGrounded = false;
         }
+        if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Z))
+        { 
+            Ataque();
+            animator.Play("Ataque");
+            Ataque();
+        }
+        
+        animator.SetBool("cair",!IsGrounded);
     }
     private void FixedUpdate()
     {
         _playerRigidbody.velocity = Vector2.ClampMagnitude(_playerRigidbody.velocity, 30);
+
     }
     private void MovePlayer()
     {
@@ -51,7 +60,6 @@ public class Movimento : MonoBehaviour
         if (horizontalInput == -1)
         {
             sprite.flipX = true;
-            
         }
         else if (horizontalInput == 1)
         {
@@ -62,11 +70,16 @@ public class Movimento : MonoBehaviour
 
         if (horizontalInput != 0)
         {
-            espada.transform.position = new Vector2(this.transform.localPosition.x + horizontalInput,espada.transform.position.y);
+            espada.transform.position = new Vector2(this.transform.localPosition.x + horizontalInput * 1.6f,espada.transform.position.y);
             escudo.transform.position = new Vector2(this.transform.localPosition.x + horizontalInput,espada.transform.position.y);
         }
     }
     private void Jump() => _playerRigidbody.AddForce( new Vector2( 0, jumpPower),  ForceMode2D.Impulse);
+
+    private void Ataque()
+    {
+        espada.gameObject.SetActive(true);
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {   
