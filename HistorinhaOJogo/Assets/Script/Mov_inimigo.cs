@@ -42,4 +42,18 @@ public class Mov_inimigo : MonoBehaviour
            _inimSprite.flipX = !_inimSprite.flipX;
         }
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {   
+        if (col.gameObject.tag == "Chao")
+        {
+           agir = true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {   
+        if (col.gameObject.tag == "Chao")
+        {
+           agir = false;
+        }
+    }
 }
