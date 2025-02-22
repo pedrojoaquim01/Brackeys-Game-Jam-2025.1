@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f18218def38f774f91aa226ea86621c, type: 3}
-  m_Name: Dialogue-03
+  m_Name: Dialogue-10
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Dad
-  <Text>k__BackingField: Then, the King begged the Young Knight to rescue his daughter,
-    and, as a reward, the King would bless the Knight with a big and festive marriage
-    with the Princess!
-  <SpeechSpeed>k__BackingField: 0.05
-  <AutoAvanceTime>k__BackingField: 0.5
-  <PanelSide>k__BackingField: 1
+  <Name>k__BackingField: Bento
+  <Text>k__BackingField: DAD!! Look out! A Golem is blocking the Young Knights path!
+  <SpeechSpeed>k__BackingField: 0.02
+  <AutoAvanceTime>k__BackingField: 1.5
+  <PanelSide>k__BackingField: 0

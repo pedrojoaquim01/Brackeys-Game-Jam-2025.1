@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f18218def38f774f91aa226ea86621c, type: 3}
-  m_Name: Dialogue-03
+  m_Name: Dialogue-11
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Dad
-  <Text>k__BackingField: Then, the King begged the Young Knight to rescue his daughter,
-    and, as a reward, the King would bless the Knight with a big and festive marriage
-    with the Princess!
-  <SpeechSpeed>k__BackingField: 0.05
-  <AutoAvanceTime>k__BackingField: 0.5
+  <Text>k__BackingField: Ok, then...
+  <SpeechSpeed>k__BackingField: 0.04
+  <AutoAvanceTime>k__BackingField: 1
   <PanelSide>k__BackingField: 1

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18218def38f774f91aa226ea86621c, type: 3}
   m_Name: Dialogue-02
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: 
-  <Text>k__BackingField: One day, the Wicked Wizard invaded the castle and kidnapped
-    the princess, leaving the entire kingdom in saddness.
+  <Name>k__BackingField: Dad
+  <Text>k__BackingField: Some day, the Wicked Mage invaded the Realm and kidnapped
+    the Beautiful Princess, leaving the Realm in pure depression
   <SpeechSpeed>k__BackingField: 0.05
   <AutoAvanceTime>k__BackingField: 0.5
+  <PanelSide>k__BackingField: 1

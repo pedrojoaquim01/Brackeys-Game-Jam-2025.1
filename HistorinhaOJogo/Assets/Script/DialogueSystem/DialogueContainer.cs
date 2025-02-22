@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Assets.Script.DialogueSystem
@@ -7,7 +8,7 @@ namespace Assets.Script.DialogueSystem
         [field:SerializeField] public Dialogue[] Dialogs { get; private set; }
         
         public void Play(){
-            DialogueManager.Instance.Play(Dialogs);
+            DialogueManager.Play(Dialogs);
         }
     }
 }

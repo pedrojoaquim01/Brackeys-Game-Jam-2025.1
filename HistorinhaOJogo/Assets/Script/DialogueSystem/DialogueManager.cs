@@ -40,9 +40,9 @@ namespace Assets.Script.DialogueSystem
         private void Start() {
             gameObject.SetActive(false);
             panels = new(){
-            {Dialogue.DialoguePanelSide.LEFT, new(txtNameLeft, txtTextLeft, txtPanelLeft)},
-            {Dialogue.DialoguePanelSide.RIGHT, new(txtNameRight, txtTextRight, txtPanelRight)}
-        };
+                {Dialogue.DialoguePanelSide.LEFT, new(txtNameLeft, txtTextLeft, txtPanelLeft)},
+                {Dialogue.DialoguePanelSide.RIGHT, new(txtNameRight, txtTextRight, txtPanelRight)}
+            };
         }
 
         private void Update() {
@@ -61,7 +61,9 @@ namespace Assets.Script.DialogueSystem
                 }
         }
 
-        public void Play(IReadOnlyList<Dialogue> dialogues, int startFrom = 0)
+        public static void Play(IReadOnlyList<Dialogue> dialogues, int startFrom = 0) => Instance.Play_Internal(dialogues, startFrom);
+
+        private void Play_Internal(IReadOnlyList<Dialogue> dialogues, int startFrom)
         {
             if (IsPlaying)
                 return;
@@ -96,7 +98,7 @@ namespace Assets.Script.DialogueSystem
 
         private void ShowNext()
         {
-            if (index >= currentDialogue.Count - 1)
+            if (index >= currentDialogue?.Count - 1)
             {
                 End();
                 return;
