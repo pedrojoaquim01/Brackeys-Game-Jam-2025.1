@@ -11,6 +11,7 @@ public class Tutorial : MonoBehaviour
     public GameObject espantalho;
     public GameObject paladino;
     public GameObject paredeInvisivel;
+    public GameOverScreen gameOverScreen;
 
     public DialogueContainer beginning;
     public DialogueContainer battleTutorial;
@@ -39,6 +40,12 @@ public class Tutorial : MonoBehaviour
         {
             playerWin.Play();
             etapaTutorial = 5;
+        }
+        if (player.GetComponent<Vida>().vida <= 0)
+        {
+            gameOverScreen.GameOver();
+            DialogueManager.RequestEnd();
+            gameObject.SetActive(false);
         }
     
     }

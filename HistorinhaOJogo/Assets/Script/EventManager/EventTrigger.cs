@@ -32,7 +32,7 @@ public class EventTrigger : MonoBehaviour
     public virtual void StartEvent()
     {
         if (DialogueManager.Instance.IsPlaying)
-            DialogueManager.Instance.RequestEnd();
+            DialogueManager.RequestEnd();
         
         DialogueManager.OnDialogueStart += DialogueStarted;
         DialogueManager.OnDialogueEnd += DialogueEnded;
