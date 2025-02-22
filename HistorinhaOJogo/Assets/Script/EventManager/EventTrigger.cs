@@ -39,7 +39,7 @@ public class EventTrigger : MonoBehaviour
         DialogueManager.OnDialogueChanged += DialogueChanged;
         
         collider2d.enabled = false;
-        DialogueManager.Instance.Play(Dialogs);
+        DialogueManager.Play(Dialogs);
     }
 
     public virtual void DialogueChanged(int index, Dialogue dialogue)
