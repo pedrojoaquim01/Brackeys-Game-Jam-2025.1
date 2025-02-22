@@ -21,7 +21,7 @@ public class Tutorial : MonoBehaviour
 
     private void Start() {
         DialogueManager.OnDialogueEnd += BeginningEnd;
-        player.GetComponent<Movimento>().podeMover = false;
+        player.GetComponent<Movimento>().SetPodeMover(false);
         paladino.SetActive(false);
         beginning.Play();
         etapaTutorial = 0;
@@ -31,7 +31,7 @@ public class Tutorial : MonoBehaviour
     {
         if( espantalho.IsDestroyed() && etapaTutorial == 2)
         {
-            player.GetComponent<Movimento>().podeMover = false;
+            player.GetComponent<Movimento>().SetPodeMover(false);
             knightBattle1.Play();
         }
         if( paladino.IsDestroyed() && etapaTutorial == 4)
@@ -49,7 +49,7 @@ public class Tutorial : MonoBehaviour
         Debug.Log(nameof(BeginningEnd));
         DialogueManager.OnDialogueEnd -= BeginningEnd;
         DialogueManager.OnDialogueEnd += BattleTutorialEnd;
-        player.GetComponent<Movimento>().podeMover = true;
+        player.GetComponent<Movimento>().SetPodeMover(true);
         //battleTutorial.Play();
     }
 
@@ -78,7 +78,7 @@ public class Tutorial : MonoBehaviour
         etapaTutorial = 4;
         Debug.Log(nameof(KnightBattle2End));
         DialogueManager.OnDialogueEnd -= KnightBattle2End;
-        player.GetComponent<Movimento>().podeMover = true;
+        player.GetComponent<Movimento>().SetPodeMover(true);
     }
 
     void OnTriggerEnter2D(Collider2D col)

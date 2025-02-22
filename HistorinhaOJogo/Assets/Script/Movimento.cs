@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +16,7 @@ public class Movimento : MonoBehaviour
     private Rigidbody2D _playerRigidbody;
     public bool IsGrounded = true;
     public bool def = false;
-    public bool podeMover = true;
+    public bool podeMover {get; private set; } = true;
     private void Start()
     {   
         podeMover = true;
@@ -101,5 +102,12 @@ public class Movimento : MonoBehaviour
             }
            col.gameObject.GetComponent<Mov_inimigo>().vida -= 100;
         }
+    }
+
+    internal void SetPodeMover(bool v)
+    {
+        podeMover = v;
+        if (!podeMover)
+            _playerRigidbody.velocity = new(0, _playerRigidbody.velocity.y);
     }
 }

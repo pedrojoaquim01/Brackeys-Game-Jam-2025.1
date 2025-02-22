@@ -7,6 +7,11 @@ public class MainMenu : MonoBehaviour
 {
     [field:SerializeField] public string StartGameScene { get; private set; } = string.Empty;
     [field:SerializeField] private Options options;
+
+    private void Awake() {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 60;
+    }    
     public void StartGame()
     {
         SceneManager.LoadSceneAsync(StartGameScene);
