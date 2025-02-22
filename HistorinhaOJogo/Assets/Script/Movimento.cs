@@ -15,8 +15,10 @@ public class Movimento : MonoBehaviour
     private Rigidbody2D _playerRigidbody;
     public bool IsGrounded = true;
     public bool def = false;
+    public bool podeMover = true;
     private void Start()
     {   
+        podeMover = true;
         //animator = GetComponent<Animator>();
         _playerRigidbody = GetComponent<Rigidbody2D>();
         if (_playerRigidbody == null)
@@ -27,19 +29,21 @@ public class Movimento : MonoBehaviour
     }
     private void Update()
     {
-        MovePlayer();
-        if (Input.GetButtonDown("Jump") && IsGrounded)
-        { 
-            Jump();
-            IsGrounded = false;
+        if (podeMover == true)
+        {
+            MovePlayer();
+            if (Input.GetButtonDown("Jump") && IsGrounded)
+            { 
+                Jump();
+                IsGrounded = false;
+            }
+            if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Z))
+            { 
+                Ataque();
+                animator.Play("Ataque");
+                Ataque();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Z))
-        { 
-            Ataque();
-            animator.Play("Ataque");
-            Ataque();
-        }
-        
         animator.SetBool("cair",!IsGrounded);
     }
     private void FixedUpdate()
