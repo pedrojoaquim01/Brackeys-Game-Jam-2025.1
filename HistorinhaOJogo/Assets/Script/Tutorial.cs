@@ -10,6 +10,7 @@ public class Tutorial : MonoBehaviour
     public GameObject player;
     public GameObject espantalho;
     public GameObject paladino;
+    public GameObject paredeInvisivel;
 
     public DialogueContainer beginning;
     public DialogueContainer battleTutorial;
@@ -79,6 +80,7 @@ public class Tutorial : MonoBehaviour
         Debug.Log(nameof(KnightBattle2End));
         DialogueManager.OnDialogueEnd -= KnightBattle2End;
         player.GetComponent<Movimento>().podeMover = true;
+        paredeInvisivel.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D col)
