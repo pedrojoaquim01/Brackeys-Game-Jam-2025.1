@@ -21,9 +21,10 @@ public class Ataque : MonoBehaviour
 
             col.gameObject.GetComponent<Mov_inimigo>().vida -= 20;
             col.gameObject.GetComponent<Mov_inimigo>().agir = false;
+            
             //col.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(10 * lado,6);
             rbInimigo.velocity = Vector2.zero;
-            rbInimigo.AddForce(new Vector2(3 * lado ,3),  ForceMode2D.Impulse);
+            rbInimigo.AddForce(new Vector2(3 * lado * rbInimigo.mass,3 * Mathf.Max(rbInimigo.mass,1)),  ForceMode2D.Impulse);
         }
         this.gameObject.SetActive(false);
     }

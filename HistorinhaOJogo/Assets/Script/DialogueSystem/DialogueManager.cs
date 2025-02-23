@@ -51,7 +51,7 @@ namespace Assets.Script.DialogueSystem
 
         private void HandleInput()
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
                 if (textEnded)
                     ShowNext();
                 else

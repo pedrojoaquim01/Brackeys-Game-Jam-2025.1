@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89604de94bf39f948833da536ab10f1b
+guid: b7175ad44e49db844bc2ed199de06546
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 125
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,85 +93,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image_4
+      name: ASSETS_TUTORIAL_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 12
-        width: 345
-        height: 2015
+        x: 51
+        y: 679
+        width: 370
+        height: 401
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621e65aff7e92fe4f800b293f7b125ec
-      internalID: 896998229
+      spriteID: 790c0a5deb3ca274baa3ac5f1e408629
+      internalID: 1399712403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_1
+      name: ASSETS_TUTORIAL_1
       rect:
         serializedVersion: 2
-        x: 1016
-        y: 0
-        width: 886
-        height: 2298
-      alignment: 9
-      pivot: {x: 0.31879145, y: 0.51810884}
+        x: 482
+        y: 698
+        width: 331
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6859d48042defa54f86e4cdf7b6f1e15
-      internalID: 41151678
+      spriteID: 2ca026c1fe475d644871e9eae1885526
+      internalID: 1676142511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_0
+      name: ASSETS_TUTORIAL_2
       rect:
         serializedVersion: 2
-        x: 481
-        y: 0
-        width: 460
-        height: 2246
-      alignment: 9
-      pivot: {x: 0.46122888, y: 0.5105875}
+        x: 927
+        y: 680
+        width: 350
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a9b9bd8442d4db468a11c6e03f19328
-      internalID: 325568858
+      spriteID: 671c3c64b3778d448b2383a5404a60d1
+      internalID: 5142369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image_3
+      name: ASSETS_TUTORIAL_3
       rect:
         serializedVersion: 2
-        x: 2042
-        y: 0
-        width: 620
-        height: 2263
-      alignment: 9
-      pivot: {x: 0.4520571, y: 0.50227684}
+        x: 34
+        y: 47
+        width: 417
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4967c6c4cfa524e4e81eac5de8b1c566
-      internalID: 37639440
+      spriteID: 6f3bcfbf651236c4d96981448b494421
+      internalID: 1149343913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASSETS_TUTORIAL_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 218
+        width: 4
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30e00b72f3cea48b0b7465ff54f3f7
+      internalID: -973554028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASSETS_TUTORIAL_5
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 55
+        width: 627
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afff0bf91e6597f45b3961d2b5562dd1
+      internalID: -1218412735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASSETS_TUTORIAL_6
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 78
+        width: 178
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eb56467dd4bb24592c80f05b30b529
+      internalID: -37902628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ASSETS_TUTORIAL_7
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 75
+        width: 331
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713833dd046e430488b0bbb438c3ca93
+      internalID: -1988587080
       vertices: []
       indices: 
       edges: []
@@ -187,10 +271,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      image_0: 325568858
-      image_1: 41151678
-      image_3: 37639440
-      image_4: 896998229
+      ASSETS_TUTORIAL_0: 1399712403
+      ASSETS_TUTORIAL_1: 1676142511
+      ASSETS_TUTORIAL_2: 5142369
+      ASSETS_TUTORIAL_3: 1149343913
+      ASSETS_TUTORIAL_4: -973554028
+      ASSETS_TUTORIAL_5: -1218412735
+      ASSETS_TUTORIAL_6: -37902628
+      ASSETS_TUTORIAL_7: -1988587080
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -16,7 +16,7 @@ public class Movimento : MonoBehaviour
     private Rigidbody2D _playerRigidbody;
     public bool IsGrounded = true;
     public bool def = false;
-    public bool podeMover {get; private set; } = true;
+    public bool podeMover = true;
     private void Start()
     {   
         podeMover = true;
@@ -104,10 +104,4 @@ public class Movimento : MonoBehaviour
         }
     }
 
-    internal void SetPodeMover(bool v)
-    {
-        podeMover = v;
-        if (!podeMover)
-            _playerRigidbody.velocity = new(0, _playerRigidbody.velocity.y);
-    }
 }
