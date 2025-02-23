@@ -82,6 +82,7 @@
     <Compile Include="Assets\Script\UI\MainMenu.cs" />
     <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
     <Compile Include="Assets\Script\CameraSegue.cs" />
+    <Compile Include="Assets\Script\GameOverScreen.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

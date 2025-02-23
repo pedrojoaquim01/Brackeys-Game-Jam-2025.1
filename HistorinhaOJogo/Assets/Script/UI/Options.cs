@@ -16,10 +16,8 @@ public class Options : MonoBehaviour
     [SerializeField] private Slider sliderSFX;
 
 
-
-    public float valorSliderMaster;
-    public float valorSliderMusica;
-    public float valorSliderSFX;
+    public delegate void OptionClose();
+    public static event OptionClose OnOptionClose;
 
     //Scrool precisa de 0.0001 atÃ© 1
     public void SetMasterVolume() => SetVolume(sliderMaster, MasterVolume);
@@ -38,6 +36,7 @@ public class Options : MonoBehaviour
     {
         PlayerPrefs.Save();
         gameObject.SetActive(false);
+        OnOptionClose?.Invoke();
     }
 
     public void ResetOptions()

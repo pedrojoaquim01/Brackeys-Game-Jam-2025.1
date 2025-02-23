@@ -74,7 +74,8 @@ namespace Assets.Script.DialogueSystem
             StartCoroutine(ShowDialogue(dialogues[index]));
         }
 
-        public void RequestEnd()
+        public static void RequestEnd() => Instance.RequestEnd_Internal();
+        public void RequestEnd_Internal()
         {
             if (!IsPlaying) 
                 return;
