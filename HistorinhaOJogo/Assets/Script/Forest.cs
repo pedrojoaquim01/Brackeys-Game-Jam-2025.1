@@ -11,6 +11,8 @@ public class Forest : MonoBehaviour
     public DialogueContainer cenario2;
     public DialogueContainer startBossBattle;
     public DialogueContainer startBossBattleFase2;
+    public DialogueContainer playerWin;
+    public DialogueContainer playerLose;
 
     private void Start() {
         DialogueManager.OnDialogueEnd += BeginningEnd;
@@ -29,6 +31,7 @@ public class Forest : MonoBehaviour
     {
         //jogador é teletransportado para a entrada novamente. a floresta tem os gnomos como inimigos comuns agora.
         DialogueManager.OnDialogueEnd -= TeleportBackEnd;
+        StartCenario2();
     }
 
     private void StartCenario2()
@@ -41,6 +44,7 @@ public class Forest : MonoBehaviour
     {
         //popa o druida
         DialogueManager.OnDialogueEnd -= EndCenario2;
+        StartCenario3();
     }
 
     private void StartCenario3()
@@ -51,8 +55,9 @@ public class Forest : MonoBehaviour
 
     private void StartBossBattle()
     {
-        DialogueManager.OnDialogueEnd -= StartBossBattle;
         //primeira fase da luta contra o Golem
+        DialogueManager.OnDialogueEnd -= StartBossBattle;
+        BossBattle2();
     }
 
     private void BossBattle2()

@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
         animator.Play("Default");
     }
 
+
     public void StartGame()
     {
         animator.Play("StartGame");

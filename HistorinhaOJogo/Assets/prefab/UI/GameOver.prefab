@@ -204,8 +204,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
-  m_sharedMaterial: {fileID: 1216108868619331721, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: effa268478a17564da1c1b5941c47792, type: 2}
+  m_sharedMaterial: {fileID: 8960113466330634770, guid: effa268478a17564da1c1b5941c47792, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -652,8 +652,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
-  m_sharedMaterial: {fileID: 1216108868619331721, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: effa268478a17564da1c1b5941c47792, type: 2}
+  m_sharedMaterial: {fileID: 8960113466330634770, guid: effa268478a17564da1c1b5941c47792, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -787,8 +787,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
-  m_sharedMaterial: {fileID: 1216108868619331721, guid: 6349b7d39ac2aee41b25e0ff6aa86f66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: effa268478a17564da1c1b5941c47792, type: 2}
+  m_sharedMaterial: {fileID: 8960113466330634770, guid: effa268478a17564da1c1b5941c47792, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
