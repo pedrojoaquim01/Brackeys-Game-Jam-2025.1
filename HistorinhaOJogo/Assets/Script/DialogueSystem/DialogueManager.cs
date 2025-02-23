@@ -33,11 +33,15 @@ namespace Assets.Script.DialogueSystem
         public delegate void DialogueChanged(int index, Dialogue dialogue);
         public static event DialogueChanged OnDialogueChanged;
 
-        private void Start() {
-            rightGroup.Hide();
-            leftGroup.Hide();
+        private void Awake() {
             gameObject.SetActive(false);
         }
+
+        // void Start()
+        // {
+        //     leftGroup.Hide();
+        //     rightGroup.Hide();
+        // }
 
         private void Update() {
             HandleInput();
@@ -61,10 +65,13 @@ namespace Assets.Script.DialogueSystem
         {
             if (IsPlaying)
                 return;
+            
+            rightGroup.Hide();
+            leftGroup.Hide();
+            gameObject.SetActive(true);
             OnDialogueStart?.Invoke();
             currentDialogue = dialogues;
             index = startFrom;
-            gameObject.SetActive(true);
             StartCoroutine(ShowDialogue(dialogues[index]));
         }
 
@@ -78,14 +85,14 @@ namespace Assets.Script.DialogueSystem
 
         private IEnumerator ShowDialogue(Dialogue d)
         {
-            currentPanel = d.PanelSide == Dialogue.DialoguePanelSide.RIGHT ? rightGroup : leftGroup;
-            var panelData = currentPanel.Show();
-            panelData.txtName.text = d.Name;
-            panelData.txtText.text = string.Empty;
+            Debug.Log("DialogueManager ShowDialogue called.");
+            currentPanel = d.PanelSide == Dialogue.DialoguePanelSide.RIGHT ? rightGroup.Show() : leftGroup.Show();
+            currentPanel.txtName.text = d.Name;
+            currentPanel.txtText.text = string.Empty;
             OnDialogueChanged?.Invoke(index, d);
             foreach (var c in d.Text.ToCharArray())
             {
-                panelData.txtText.text += c;
+                currentPanel.txtText.text += c;
                 if (textEnded && d.IsAutoAdvance)
                     Invoke(nameof(ShowNext), d.AutoAvanceTime);
                 yield return new WaitForSeconds(d.SpeechSpeed);
@@ -105,8 +112,10 @@ namespace Assets.Script.DialogueSystem
 
         private void End()
         {
-            gameObject.SetActive(false);
+            rightGroup.Hide();
+            leftGroup.Hide();
             currentDialogue = null;
+            gameObject.SetActive(false);
             OnDialogueEnd?.Invoke();
         }
         [Serializable]
