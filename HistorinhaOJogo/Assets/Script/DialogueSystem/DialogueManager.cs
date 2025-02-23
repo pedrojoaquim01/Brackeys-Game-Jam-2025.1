@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -8,18 +9,13 @@ namespace Assets.Script.DialogueSystem
 {
     public class DialogueManager : MonoBehaviour
     {
-        [SerializeField] private MonoBehaviour txtPanelRight;
-        [SerializeField] private TextMeshProUGUI txtNameRight;
-        [SerializeField] private TextMeshProUGUI txtTextRight;
-        [SerializeField] private MonoBehaviour txtPanelLeft;
-        [SerializeField] private TextMeshProUGUI txtNameLeft;
-        [SerializeField] private TextMeshProUGUI txtTextLeft;
+        public PanelGroup leftGroup;
+        public PanelGroup rightGroup;
         private IReadOnlyList<Dialogue> currentDialogue;
         private int index;
-        private PanelGroup currentPanel => panels[currentDialogue[index].PanelSide];
+        private PanelGroup currentPanel;
         private bool textEnded => currentPanel.txtText.text == currentDialogue[index].Text;
         public bool IsPlaying => currentDialogue is not null;
-        private Dictionary<Dialogue.DialoguePanelSide, PanelGroup> panels;
 
         public static DialogueManager Instance
         {
@@ -38,11 +34,9 @@ namespace Assets.Script.DialogueSystem
         public static event DialogueChanged OnDialogueChanged;
 
         private void Start() {
+            rightGroup.Hide();
+            leftGroup.Hide();
             gameObject.SetActive(false);
-            panels = new(){
-                {Dialogue.DialoguePanelSide.LEFT, new(txtNameLeft, txtTextLeft, txtPanelLeft)},
-                {Dialogue.DialoguePanelSide.RIGHT, new(txtNameRight, txtTextRight, txtPanelRight)}
-            };
         }
 
         private void Update() {
@@ -84,6 +78,7 @@ namespace Assets.Script.DialogueSystem
 
         private IEnumerator ShowDialogue(Dialogue d)
         {
+            currentPanel = d.PanelSide == Dialogue.DialoguePanelSide.RIGHT ? rightGroup : leftGroup;
             var panelData = currentPanel.Show();
             panelData.txtName.text = d.Name;
             panelData.txtText.text = string.Empty;
@@ -114,28 +109,29 @@ namespace Assets.Script.DialogueSystem
             currentDialogue = null;
             OnDialogueEnd?.Invoke();
         }
-
-        private class PanelGroup
+        [Serializable]
+        public class PanelGroup
         {
-            public PanelGroup(TextMeshProUGUI txtName, TextMeshProUGUI txtText, MonoBehaviour panel)
+            [SerializeField] public Dialogue.DialoguePanelSide panelSide;// { get; private set; }        
+            [SerializeField] public MonoBehaviour panel;// { get; private set; }
+            [SerializeField] public TextMeshProUGUI txtName;// { get; private set; }
+            [SerializeField] public TextMeshProUGUI txtText;// { get; private set; }
+
+            public PanelGroup(){}
+            public PanelGroup(MonoBehaviour panel, TextMeshProUGUI txtName, TextMeshProUGUI txtText)
             {
+                this.panel = panel;
                 this.txtName = txtName;
                 this.txtText = txtText;
-                this.panel = panel;
-                Hide();
             }
 
-            public TextMeshProUGUI txtName { get; internal set; }
-            public TextMeshProUGUI txtText { get; internal set; }
-            public MonoBehaviour panel { get; internal set; }
-
-            internal PanelGroup Hide()
+            public PanelGroup Hide()
             {
                 panel.gameObject.SetActive(false);
                 return this;
             }
 
-            internal PanelGroup Show()
+            public PanelGroup Show()
             {
                 panel.gameObject.SetActive(true);
                 return this;
