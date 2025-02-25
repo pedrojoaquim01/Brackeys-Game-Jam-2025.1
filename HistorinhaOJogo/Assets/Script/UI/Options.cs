@@ -13,10 +13,10 @@ public class Options : MonoBehaviour
     // [SerializeField] private AudioMixer audioMixer;
 
      [SerializeField] private Slider sliderMaster;
-    // [SerializeField] private Slider sliderMusica;
-    // [SerializeField] private Slider sliderSFX;
+    [SerializeField] private Slider sliderMusica;
+    [SerializeField] private Slider sliderSFX;
 
-    float volumeMaster;
+    float volumeMaster, volumeMusic, volumeSFX;
 
 
     public delegate void OptionClose();
@@ -26,6 +26,24 @@ public class Options : MonoBehaviour
     {
         volumeMaster = volume;
         AudioListener.volume = volumeMaster;
+    }
+        public void VolumeMusic(float volume)
+    {
+        volumeMusic = volume;
+        GameObject[] Musics = GameObject.FindGameObjectsWithTag("music");
+        for(int i = 0; i< Musics.Length; i++)
+        {
+            Musics[i].GetComponent<AudioSource>().volume = volumeMusic;
+        }
+    }
+        public void VolumeSFX(float volume)
+    {
+        volumeSFX = volume;
+        GameObject[] Sfxs = GameObject.FindGameObjectsWithTag("sfx");
+        for(int i = 0; i<Sfxs.Length; i++)
+        {
+            Sfxs[i].GetComponent<AudioSource>().volume = volumeSFX;
+        }
     }
 
     // //Scrool precisa de 0.0001 atÃ© 1
@@ -51,6 +69,8 @@ public class Options : MonoBehaviour
      public void ResetOptions()
     {
         sliderMaster.value = 1f;
+        sliderMusica.value = 1f;
+        sliderSFX.value = 1f;
     //     sliderMusica.value = 1f;
     //     sliderSFX.value = 1f;
         //VolumeMaster(volume);
