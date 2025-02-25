@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioSource music;
     [field:SerializeField] public string StartGameScene { get; private set; } = string.Empty;
     [field:SerializeField] private Options options;
     private Animator animator;
@@ -16,6 +17,7 @@ public class MainMenu : MonoBehaviour
         Application.targetFrameRate = 60;
     }
     private void Start() {
+        music.Play();
         animator = gameObject.GetComponent<Animator>();
         animator.Play("Default");
         Options.OnOptionClose += OptionsClosed;
@@ -33,6 +35,7 @@ public class MainMenu : MonoBehaviour
     }
     public void _StartGame()
     {
+        music.Stop();
         SceneManager.LoadSceneAsync(StartGameScene);
     }
 
