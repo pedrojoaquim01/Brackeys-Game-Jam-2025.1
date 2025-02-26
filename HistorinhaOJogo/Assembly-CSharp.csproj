@@ -74,6 +74,7 @@
     <Compile Include="Assets\Script\EventManager\Events\Enemy\EnemyBaseEvent.cs" />
     <Compile Include="Assets\Script\Vida.cs" />
     <Compile Include="Assets\Script\Tutorial.cs" />
+    <Compile Include="Assets\Script\Vida_inimigo.cs" />
     <Compile Include="Assets\Script\Movimento.cs" />
     <Compile Include="Assets\Script\DialogueSystem\Dialogue.cs" />
     <Compile Include="Assets\Script\Forest.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Script\Extensions.cs" />
     <Compile Include="Assets\Script\EventManager\EventTrigger.cs" />
     <Compile Include="Assets\Script\Verifica_Chao.cs" />
+    <Compile Include="Assets\Script\Segue_Inimigo.cs" />
     <Compile Include="Assets\Script\UI\MainMenu.cs" />
     <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
     <Compile Include="Assets\Script\colissorHandler.cs" />

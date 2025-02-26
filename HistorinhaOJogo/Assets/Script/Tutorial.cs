@@ -22,8 +22,12 @@ public class Tutorial : MonoBehaviour
     public int etapaTutorial = 0;
 
     private void Start() {
-        DialogueManager.OnDialogueEnd += BeginningEnd;
+        //Debug.Log("Não pode mover");
         player.GetComponent<Movimento>().podeMover = false;
+        Debug.Log("começou o diálogo de intro");
+        DialogueManager.OnDialogueEnd += BeginningEnd;
+        
+        
         paladino.SetActive(false);
         beginning.Play();
         etapaTutorial = 0;
@@ -59,19 +63,21 @@ public class Tutorial : MonoBehaviour
     private void BeginningEnd()
     {
         //ensina o tutorial de movimentação
+        Debug.Log("termina a intro, n trava o player");
         etapaTutorial = 1;
-        Debug.Log(nameof(BeginningEnd));
+        //Debug.Log(nameof(BeginningEnd));
         DialogueManager.OnDialogueEnd -= BeginningEnd;
         DialogueManager.OnDialogueEnd += BattleTutorialEnd;
+        Debug.Log("Boneco volta se mexer");
         player.GetComponent<Movimento>().podeMover = true;
         //battleTutorial.Play();
     }
 
     private void BattleTutorialEnd()
     {
-        // popa um boneco de feno e ensina o tutorial de batalha
+        //boneco de feno e ensina o tutorial de batalha
         etapaTutorial = 2;
-        Debug.Log(nameof(BattleTutorialEnd));
+        //Debug.Log(nameof(BattleTutorialEnd));
         DialogueManager.OnDialogueEnd -= BattleTutorialEnd;
         DialogueManager.OnDialogueEnd += KnightBattle1End;
     }
