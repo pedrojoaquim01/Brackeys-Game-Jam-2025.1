@@ -84,8 +84,8 @@
     <Compile Include="Assets\Script\Verifica_Chao.cs" />
     <Compile Include="Assets\Script\UI\MainMenu.cs" />
     <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
-    <Compile Include="Assets\Script\CameraSegue.cs" />
     <Compile Include="Assets\Script\colissorHandler.cs" />
+    <Compile Include="Assets\Script\CameraSegue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
