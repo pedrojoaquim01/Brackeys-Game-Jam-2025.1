@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mov_inimigo : MonoBehaviour
 {
-    // lado = -1;
+    //int lado = -1;
     private Rigidbody2D _InimRigidbody;
     private SpriteRenderer _inimSprite;
     //
