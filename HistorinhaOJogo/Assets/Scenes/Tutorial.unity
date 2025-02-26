@@ -741,6 +741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1797346605999460703, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.7999268
+      objectReference: {fileID: 0}
     - target: {fileID: 3965401940255302680, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -748,6 +752,10 @@ PrefabInstance:
     - target: {fileID: 3965401940255302680, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5279528419697756090, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.2800293
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
@@ -999,8 +1007,10 @@ GameObject:
   - component: {fileID: 515578162}
   - component: {fileID: 515578161}
   - component: {fileID: 515578160}
+  - component: {fileID: 515578165}
   - component: {fileID: 515578159}
   - component: {fileID: 515578163}
+  - component: {fileID: 515578164}
   m_Layer: 0
   m_Name: Espantalho
   m_TagString: Inimigo
@@ -1137,6 +1147,42 @@ MonoBehaviour:
   agir: 0
   velocidade: 0
   velocidadeMod: 1
+  player: {fileID: 1400096727}
+  vida: 60
+  EnemyGroup: 0
+--- !u!95 &515578164
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515578158}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &515578165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515578158}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e984254b9ba721f4f83369a4bffeec9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   vida: 60
   EnemyGroup: 0
 --- !u!1 &558693295
@@ -2171,6 +2217,7 @@ GameObject:
   - component: {fileID: 1053662377}
   - component: {fileID: 1053662376}
   - component: {fileID: 1053662380}
+  - component: {fileID: 1053662384}
   - component: {fileID: 1053662381}
   - component: {fileID: 1053662383}
   m_Layer: 0
@@ -2214,8 +2261,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agir: 1
-  velocidade: 0
+  velocidade: 5
   velocidadeMod: 1
+  player: {fileID: 1400096727}
   vida: 200
   EnemyGroup: 0
 --- !u!212 &1053662378
@@ -2348,6 +2396,23 @@ MonoBehaviour:
   dano: 25
   espada: {fileID: 463217727}
   timer: 0
+--- !u!114 &1053662384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053662374}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a42b848445b224ea33db5db981ad0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovimentaX: 0.2
+  MovimentaY: 1
+  player: {fileID: 1400096727}
+  offsetX: 0
+  offsetY: 0
 --- !u!1 &1056943261
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,6 +3551,10 @@ PrefabInstance:
     - target: {fileID: 8327210688826666950, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8327210689868101912, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.4996338
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
