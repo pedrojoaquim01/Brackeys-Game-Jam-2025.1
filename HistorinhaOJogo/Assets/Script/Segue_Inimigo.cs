@@ -1,62 +1,46 @@
 // using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
 public class Segue_Inimigo : MonoBehaviour
 {
-    private Transform posPlayer; //posição jogador
-    public GameObject player;
-    private Animator anim;
-    public float enemyVel; //velocidade com que o inimigo segue
-    public float enemyRange; //range do inimigo
-    public bool canWalk; //pode perseguir ou não
-    public SpriteRenderer sprite;
 
+    private Vector2 velocity;
+    public float MovimentaX;
+    public float MovimentaY;
+    public GameObject player;
+
+    // public bool Limite;
+    // public Vector3 MaxCamera;
+    // public Vector3 MinCamera;
+
+    
+    public float offsetX;
+    public float offsetY;
+
+
+    // Use this for initialization
     void Start()
     {
-        canWalk = true;
-        anim = gameObject.GetComponent<Animator>();
-        posPlayer = GameObject.FindGameObjectWithTag("Player").transform;
+
+        //player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void Update()
+    // Update is called once per frame
+    void FixedUpdate()
     {
-        Debug.Log(canWalk);
 
-        if (player.transform.position.x > transform.position.x)
-        {
-            sprite.flipX = true;
-        }
-        else
-        {
-            sprite.flipX = false;
+        float posX = Mathf.SmoothDamp(transform.position.x, player.transform.position.x, ref velocity.x, MovimentaX);
+       // float posY = Mathf.SmoothDamp(transform.position.y, player.transform.position.y, ref velocity.y, MovimentaY);
 
-        }
+        transform.position = new Vector3(posX + offsetX, transform.position.y, transform.position.z);
 
-        PlayerFollow();    
+        // if (Limite)
+        // {
+        //     transform.position = new Vector3(Mathf.Clamp(transform.position.x, MinCamera.x, MaxCamera.x),
+        //         Mathf.Clamp(transform.position.y, MinCamera.y, MaxCamera.y),
+        //         Mathf.Clamp(transform.position.z, MinCamera.z, MaxCamera.z));
+        // }
+
     }
-
-    private void PlayerFollow()
-    {
-        float distance = Vector2.Distance(transform.position, posPlayer.position);
-
-        if(canWalk)
-        {
-            anim.SetBool("moving",true);
-            //faz o inimigo se mover na direção do player
-            //PRECISA aplicar LINEAR DRAG no rigidbody do inimigo, pois isso evita que
-            //a velocidade de repulsão da colisão entre o inimigo e o player seja maior que a
-            //velocidade de atração, bugando o movimento do inimigo.
-            transform.position = Vector2.MoveTowards(transform.position, posPlayer.position, enemyVel * Time.deltaTime);
-
-        }
-        if(distance < enemyRange)
-        {
-            this.GetComponent<Atk_paladinho>().AtkPlayer();
-        }
-
-
-    } 
-
 }

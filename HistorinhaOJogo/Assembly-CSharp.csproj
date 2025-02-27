@@ -88,7 +88,6 @@
     <Compile Include="Assets\Script\DialogueSystem\DialogueContainer.cs" />
     <Compile Include="Assets\Script\colissorHandler.cs" />
     <Compile Include="Assets\Script\CameraSegue.cs" />
-    <Compile Include="Assets\Script\Atk_paladinho.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

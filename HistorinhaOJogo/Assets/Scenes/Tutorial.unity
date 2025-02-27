@@ -657,10 +657,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7686791360085247, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1716331618068199162, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -747,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1797346605999460703, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.8000488
+      value: 1.7999268
       objectReference: {fileID: 0}
     - target: {fileID: 3965401940255302680, guid: ba147ad1a45852b4aacff76956a929ee, type: 3}
       propertyPath: m_Name
@@ -1035,7 +1031,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -1152,7 +1148,7 @@ MonoBehaviour:
   velocidade: 0
   velocidadeMod: 1
   player: {fileID: 1400096727}
-  vida: 1
+  vida: 60
   EnemyGroup: 0
 --- !u!95 &515578164
 Animator:
@@ -2223,7 +2219,6 @@ GameObject:
   - component: {fileID: 1053662380}
   - component: {fileID: 1053662384}
   - component: {fileID: 1053662381}
-  - component: {fileID: 1053662385}
   - component: {fileID: 1053662383}
   m_Layer: 0
   m_Name: Paladino
@@ -2245,7 +2240,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDrag: 5
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 10
   m_Material: {fileID: 6200000, guid: fd60777532fd45d4eba147b86b44b108, type: 2}
@@ -2260,7 +2255,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053662374}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0b7354e71261e84f9d9db96e3ce79aa, type: 3}
   m_Name: 
@@ -2393,7 +2388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053662374}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 364dfdc7ba5e8b94d858721fccf8cbb4, type: 3}
   m_Name: 
@@ -2408,32 +2403,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053662374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8a42b848445b224ea33db5db981ad0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovimentaX: 0.2
+  MovimentaY: 1
   player: {fileID: 1400096727}
-  enemyVel: 3
-  enemyRange: 5
-  canWalk: 0
-  sprite: {fileID: 1053662378}
---- !u!114 &1053662385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053662374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9cdb0300dcd1542b0202fdc86ac77c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inimigo: {fileID: 1053662374}
-  dano: 25
-  espada: {fileID: 463217727}
-  timer: 0
+  offsetX: 0
+  offsetY: 0
 --- !u!1 &1056943261
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,18 +3460,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6666075891764508853, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.6254883
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696367998798976187, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.125
-      objectReference: {fileID: 0}
-    - target: {fileID: 7696367998798976187, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.98371124
-      objectReference: {fileID: 0}
     - target: {fileID: 8327210688826666946, guid: 034da86b5bbe4fa4bb58d81457786fb6, type: 3}
       propertyPath: m_Name
       value: DialogueManager
