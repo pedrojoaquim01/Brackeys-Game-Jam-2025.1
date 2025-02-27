@@ -19,6 +19,6 @@ public class Transicao : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadSceneAsync("MainMenu");
+        SceneManager.LoadSceneAsync("ForestStage");
     }
 }

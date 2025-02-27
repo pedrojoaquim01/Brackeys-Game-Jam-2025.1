@@ -101,7 +101,7 @@ namespace Assets.Script.DialogueSystem
 
         private void ShowNext()
         {
-            if (index >= currentDialogue?.Count - 1)
+            if (currentDialogue == null || index >= currentDialogue?.Count - 1)
             {
                 End();
                 return;

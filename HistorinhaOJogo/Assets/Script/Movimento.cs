@@ -19,6 +19,7 @@ public class Movimento : MonoBehaviour
     public bool podeMover = true;
     private void Start()
     {   
+        //Debug.Log("pode mover");
         podeMover = true;
         //animator = GetComponent<Animator>();
         _playerRigidbody = GetComponent<Rigidbody2D>();
@@ -30,6 +31,7 @@ public class Movimento : MonoBehaviour
     }
     private void Update()
     {
+        //Debug.Log(podeMover);
         if (podeMover == true)
         {
             MovePlayer();
@@ -93,8 +95,10 @@ public class Movimento : MonoBehaviour
         {
             IsGrounded = true;
         }
+
         Collider2D myCollider = col.GetContact(0).collider;
-         if (myCollider.gameObject.tag == "Alvo")   
+
+        if (myCollider.gameObject.tag == "Alvo")   
         {
             if (_playerRigidbody.velocity.y < 25)
             {
@@ -102,6 +106,8 @@ public class Movimento : MonoBehaviour
             }
            col.gameObject.GetComponent<Mov_inimigo>().vida -= 100;
         }
+
+        //if (col.gameObject.tag == "")
     }
 
 }

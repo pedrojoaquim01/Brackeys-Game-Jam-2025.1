@@ -8,6 +8,8 @@ TagManager:
   - Chao
   - Alvo
   - Inimigo
+  - music
+  - sfx
   layers:
   - Default
   - TransparentFX
