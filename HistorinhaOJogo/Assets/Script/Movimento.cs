@@ -31,7 +31,7 @@ public class Movimento : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(podeMover);
+        //Debug.Log(podeMover);
         if (podeMover == true)
         {
             MovePlayer();
