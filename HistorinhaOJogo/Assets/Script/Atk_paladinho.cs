@@ -7,8 +7,6 @@ public class Atk_paladinho : MonoBehaviour
 {
     public GameObject inimigo;
     public int dano = 25;
-    private int animLayer = 0;
-    //private int lado = 0;
     private Animator anim;
     public GameObject espada;
     public float timer = 0;
@@ -28,15 +26,13 @@ public class Atk_paladinho : MonoBehaviour
 
     public void AtkPlayer()
     {
-
-         StartCoroutine(Ataque());
-        
+         StartCoroutine(Ataque());    
     }
 
     IEnumerator Ataque()
     {
         inimigo.GetComponent<Segue_Inimigo>().canWalk = false;
-        Debug.Log("Parou de andar");
+        //Debug.Log("Parou de andar");
         anim.SetBool("atk",true); //inicia anim de atk
         yield return new WaitForSeconds(1.10f);
         espada.SetActive(true); //espadada
@@ -47,14 +43,4 @@ public class Atk_paladinho : MonoBehaviour
         inimigo.GetComponent<Segue_Inimigo>().canWalk = true;
 
     }
-
-    // bool isPlaying(Animator anim, string stateName)
-    // {
-    //     if (anim.GetCurrentAnimatorStateInfo(animLayer).IsName(stateName) &&
-    //             anim.GetCurrentAnimatorStateInfo(animLayer).normalizedTime < 1.0f)
-    //         return true;
-    //     else
-    //         return false;
-    // }
-    
 }
