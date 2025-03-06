@@ -19,6 +19,11 @@ public class Transicao : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        SceneManager.LoadSceneAsync("ForestStage");
+        if(!GameObject.FindGameObjectWithTag("Inimigo"))
+        {
+            SceneManager.LoadSceneAsync("ForestStage");
+
+        }
+        
     }
 }
