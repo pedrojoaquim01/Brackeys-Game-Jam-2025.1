@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
+    public AudioSource music;
     public GameObject player;
     public GameObject espantalho;
     public GameObject paladino;
@@ -22,6 +23,7 @@ public class Tutorial : MonoBehaviour
     public int etapaTutorial = 0;
 
     private void Start() {
+        music.Play();
         //Debug.Log("Não pode mover");
         player.GetComponent<Movimento>().podeMover = false;
         Debug.Log("começou o diálogo de intro");

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Transicao : MonoBehaviour
 {
+    public AudioSource music;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,10 @@ public class Transicao : MonoBehaviour
     {
         if(!GameObject.FindGameObjectWithTag("Inimigo"))
         {
+            if(music.isPlaying)
+            {
+                music.Stop();
+            }
             SceneManager.LoadSceneAsync("ForestStage");
 
         }
